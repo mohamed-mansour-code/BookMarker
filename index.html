@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>third JS</title>
+
+
+    <!-- ========= google font ========= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <!-- ========= font awesome ========= -->
+    <!-- ========= bootstrap ========= -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- ========= main css ========= -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- ========= style css ========= -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+   <!-- ========== start navbar ========== -->
+   <nav class="container overflow-hidden">
+      <div class="pt-5 p-4 mt-3 border-bottom border-dark">
+         <h1 class="fs-30 fw-700 text-main">Bookmarker</h1>
+      </div>
+   </nav>
+   <!-- ========== end navbar ========== -->
+
+   <!-- ========== start form ========== -->
+   <section class="mt-4">
+      <div class="container py-5 bg-sec">
+         <div class="box w-75 mx-auto text-center">
+            <h2 class="fs-25 fw-700 text-dark">Bookmark your favorite sites</h2>
+            <p class="fs-15 fw-700 mt-4">Site Name</p>
+            <input type="text" id="webName" class="form-control" placeholder="Bookmark Name">
+            <div class="mt-1 p-1 alert alert-danger d-none" id="alert1" role="alert">
+               Name is required (3 , 12) char and number
+             </div>
+
+            <p class="fs-15 fw-700 mt-4">Site URL</p>
+            <input type="text" id="webUrl" class="form-control" placeholder="website URL">
+            <div class="mt-1 py-1 alert alert-danger d-none" id="alert2" role="alert">
+               Url Field OR correct url is required
+             </div>
+            <div class="mt-1 py-1 alert alert-danger d-none" id="alert3" role="alert">
+               Url is exist
+             </div>
+
+            <button onclick="add()" class="btn btn-primary mt-4">Submit</button>
+         </div>
+      </div>
+   </section>
+   <!-- ========== end form ========== -->
+
+   <section class="mt-5">
+      <div class="container" id="boxItem">
+
+      </div>
+   </section>
+
+   <!-- ========== start table ========== -->
+   <section class="container bg-dark">
+      <hr>
+   </section>
+   <!-- ========== end table ========== -->
+
+   <footer class="container py-4">
+      <p class="fs-15 fw-700 text-main m-0">© 2019 Bookmarker Inc.</p>
+   </footer>
+
+    
+    <!-- ========= bootstrap javascript ========= -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
